@@ -1,0 +1,39 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build chapter 1 questions file",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "question1.cpp",
+                "question2.cpp",
+                "question3.cpp",
+                "question4.cpp",
+                "question5.cpp",
+                "question6.cpp",
+                "question7.cpp",
+                "question8.cpp",
+                "question9.cpp",
+                "main.cpp",
+                "-o",
+                "main"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "remove chapter 1 questions file",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "main.exe"
+            ]
+        }
+    ]
+}
